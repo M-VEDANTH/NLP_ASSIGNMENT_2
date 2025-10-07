@@ -32,3 +32,6 @@ assign_2/
 ## Evaluation Metrics
 - Precision, Recall, F1-score
 - Accuracy
+## Results (Drive Link):
+- https://docs.google.com/document/d/1IVmSqYH3X7bYkDMxIgjzm0L_beupH7di9pMsSOI1GnQ/edit?usp=sharing
+
