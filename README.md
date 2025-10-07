@@ -1,11 +1,35 @@
-# NLP_ASSIGNMENT_2
+# Slot Filling and Intent Classification Project
 
-Experimental variants: for each encoder type (LSTM and RNN) and each dataset (ATIS and SLURP) you must run:
+This project implements and compares RNN and LSTM architectures for slot filling and intent classification tasks on ATIS and SLURP datasets.
 
-Independent models: slot-only model and intent-only model trained separately.
+## Project Structure
+```
+assign_2/
+├── data/               # Dataset storage and preprocessing
+├── models/             # RNN and LSTM model implementations
+├── experiments/        # Four experimental setups
+├── utils/              # Utility functions and evaluation metrics
+├── results/            # Experimental results and analysis
+├── requirements.txt    # Dependencies
+└── README.md          # This file
+```
 
-Slot → Intent pipeline: run slot model first, use its predictions (or predicted distributions) as additional features for intent classifier.
+## Datasets
+1. **ATIS**: Airline Travel Information System dataset for slot filling and intent classification
+2. **SLURP**: Spoken Language Understanding Resource Package
 
-Intent → Slot pipeline: run intent model first, use predicted intent as extra feature (per-token) for slot model.
+## Experimental Setup
+1. **Independent Models**: Separate slot filling and intent classification
+2. **Slot → Intent**: Use slot predictions for intent classification
+3. **Intent → Slot**: Use intent predictions for slot filling  
+4. **Joint Multi-Task**: Shared encoder with dual output heads
 
-Joint multi-task: shared encoder + two heads, train jointly with combined loss.
+## Usage
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run data preprocessing: `python utils/preprocess_data.py`
+3. Train models: `python experiments/[experiment_file_name].py`
+
+## Evaluation Metrics
+- Precision, Recall, F1-score
+- Accuracy
+- Slot-level and Intent-level performance analysis
