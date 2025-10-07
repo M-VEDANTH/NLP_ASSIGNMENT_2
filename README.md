@@ -1,3 +1,4 @@
+
 # Slot Filling and Intent Classification Project
 
 This project implements and compares RNN and LSTM architectures for slot filling and intent classification tasks on ATIS and SLURP datasets.
@@ -9,7 +10,6 @@ assign_2/
 ├── models/             # RNN and LSTM model implementations
 ├── experiments/        # Four experimental setups
 ├── utils/              # Utility functions and evaluation metrics
-├── results/            # Experimental results and analysis
 ├── requirements.txt    # Dependencies
 └── README.md          # This file
 ```
@@ -32,4 +32,3 @@ assign_2/
 ## Evaluation Metrics
 - Precision, Recall, F1-score
 - Accuracy
-- Slot-level and Intent-level performance analysis
